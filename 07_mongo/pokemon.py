@@ -1,4 +1,4 @@
-#Kendrick Liang
+#Team Global Waming -- Ricky Li, Kendrick Liang
 #SoftDev2 pd6
 #K07 -- Import/Export Bank
 #2019-03-04
@@ -8,15 +8,15 @@ The Pokedex dataset contains information about all 151 Generation I Pokemon, inc
 Link: https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
 
 Import mechanism:
-If the db is already in the server, it is dropped to prevent duplicates. A new db and collection are created. Because the dataset is a JSON file, it can be loaded as a python dictionary list and inserted into the collection with the insert_many function.
+If the db is already in the server, it is dropped to prevent duplicates. A new db GlobalWaming and collection pokemon are created. Because the dataset is a JSON file, it can be loaded as a python dictionary list and inserted into the collection with the insert_many function.
 '''
 
 import pymongo, json
 
 SERVER_ADDR="142.93.206.119"
 connection=pymongo.MongoClient(SERVER_ADDR)
-connection.drop_database("Solo")
-db = connection.Solo
+connection.drop_database("GlobalWaming")
+db = connection.GlobalWaming
 collection = db.pokemon
 
 f = open("pokedex.json")
