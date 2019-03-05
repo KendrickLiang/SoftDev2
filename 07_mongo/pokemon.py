@@ -1,4 +1,4 @@
-#Team Global Waming -- Ricky Li, Kendrick Liang
+#Team Global Waming -- Ricky Lin, Kendrick Liang
 #SoftDev2 pd6
 #K07 -- Import/Export Bank
 #2019-03-04
