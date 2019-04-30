@@ -22,8 +22,15 @@ def make_counter():
     count = 0
     def inc():
         nonlocal count
+        print("Current: " + str(count))
         count += 1
         return count
     return inc
-ctr1 = make_counter()
-ctr2 = make_counter()
+c1 = make_counter()
+c2 = make_counter()
+
+print(c1())
+print(c1())
+print(c2())
+print(c1())
+print(c2())
